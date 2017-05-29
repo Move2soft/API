@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light____"
+    tools:context="com.wanttomeet.uv.activity.Register">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_light____"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_light____"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/value_18"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/value_10"
+                android:text="Registration" />
+
+            <ImageView
+                android:id="@+id/iv_menu"
+                android:layout_width="230dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:padding="@dimen/value_5"
+                android:src="@drawable/ic_nw" />
+
+
+
+             </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/stock"
+                android:gravity="center|left"
+                android:textSize="16dp"
+                android:singleLine="true"
+                android:hint="Name"
+                android:padding="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/stock"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Gender" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_female"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.5"
+                        android:background="@color/gray"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Female" />
+
+                    <TextView
+                        android:id="@+id/tv_male"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:layout_margin="5dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_weight="0.5"
+                        android:textColor="@color/white"
+                        android:text="Male" />
+                    </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <EditText
+                android:id="@+id/etMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/stock"
+                android:gravity="center|left"
+                android:textSize="16dp"
+                android:singleLine="true"
+                android:hint="Mobile No"
+                android:inputType="number"
+                android:maxLength="10"
+                android:layout_marginTop="10dp"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/tv_caldender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/value_18"
+                android:gravity="left"
+                android:textColor="@color/black_66"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/stock"
+                android:drawableRight="@drawable/ic_calender"
+                android:padding="@dimen/value_8"
+                android:text="Date of Birth" />
+
+            <EditText
+                android:id="@+id/etEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/stock"
+                android:gravity="center|left"
+                android:textSize="16dp"
+                android:singleLine="true"
+                android:hint="Email"
+                android:layout_marginTop="10dp"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/stock"
+                android:gravity="center|left"
+                android:textSize="16dp"
+                android:singleLine="true"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:padding="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/stock"
+                android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Location" />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etCity"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textSize="16dp"
+                        android:gravity="left"
+                        android:padding="8dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/stock"
+                        android:layout_weight="0.5"
+                        android:textColor="@color/black"
+                        android:hint="Surat" />
+
+                    <EditText
+                        android:id="@+id/etState"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textSize="16dp"
+                        android:gravity="left"
+                        android:padding="8dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/stock"
+                        android:layout_weight="0.5"
+                        android:textColor="@color/black"
+                        android:hint="Gujarat" />
+
+
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/etCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/value_18"
+                    android:gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/stock"
+                    android:padding="@dimen/value_8"
+                    android:hint="India" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+    <TextView
+            android:id="@+id/tv_skip"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:layout_marginRight="3dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:text="SKIP" />
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="0.5"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:text="NEXT" />
+
+        </LinearLayout>
+        </LinearLayout>
+</ScrollView>

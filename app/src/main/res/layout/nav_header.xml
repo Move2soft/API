@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:layout_marginBottom="@dimen/value_15"
+    android:orientation="vertical">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_header_image_view"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/face"
+        app:civ_border_width="2dp"
+        android:layout_margin="8dp"
+        android:layout_gravity="center"
+        app:civ_border_color="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/tv_name_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:layout_weight="0.5"
+        android:text="Dinesh N Nakum" />
+
+    <TextView
+        android:id="@+id/tv_email_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:layout_weight="0.5"
+        android:text="dineshnakum@gmail.com" />
+
+
+</LinearLayout>

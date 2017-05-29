@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_cart"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:background="@drawable/shap_news_card"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_titile_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_nw"
+            android:drawablePadding="10dp"
+            android:padding="@dimen/value_10"
+            android:text="LimeRoad is a fun and exciting" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black_66"></View>
+
+
+
+
+        <ImageView
+            android:id="@+id/iv_banner_all"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        android:layout_margin="5dp"
+        android:src="@drawable/mayayy" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black_66"></View>
+
+        <TextView
+            android:id="@+id/tv_body_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:alpha="0.6"
+            android:padding="@dimen/value_10"
+            android:text="LimeRoad is a fun and exciting way to discover, share and shop. A social-commerce platform targeted at intelligent women and men of today, it has an incredible width of carefully selected merchandise, enabling customers to discover the best of lifestyle products across categories like apparel, accessories, home and non-perishable food. We are passionate about finding things that rise above the mundane; that we think will catch your eye and arrest it. Moreover, to bring these to you wherever you are and whenever you feel you have the time to indulge a little. So we created a company to bring you products you will fall in love with; to give you a chance to create your own space, to tap into those hidden talents and make your personal looks and collections; to help you share your creations with friends to get that second opinion, to inspire or be inspired; and to help you shop in a way that you will find mesmerizing. We like to think of LimeRoad as the digital-age equivalent of the 16th Century Grand Trunk Road, a highway that changed the face of trade in the Indian subcontinent." />
+    </LinearLayout>
+</LinearLayout>

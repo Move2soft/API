@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- We use a Toolbar so that our drawer can be displayed
+                 in front of the action bar -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+
+                    <include layout="@layout/toolbar" />
+                </android.support.design.widget.AppBarLayout>
+
+
+            </FrameLayout>
+
+
+            <!-- The rest of your content view -->
+            <LinearLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadeScrollbars="false"
+                android:fadingEdge="none"
+                android:orientation="vertical"
+                android:scrollbars="none"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+
+
+
+                </LinearLayout>
+
+                <!--<android.support.v4.widget.NestedScrollView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+                    <!---->
+
+                <!--</android.support.v4.widget.NestedScrollView>-->
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Main layout -->
+
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

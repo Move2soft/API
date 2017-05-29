@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- We use a Toolbar so that our drawer can be displayed
+                     in front of the action bar -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.AppBarLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/AppTheme.AppBarOverlay">
+
+                        <include layout="@layout/toolbar" />
+                    </android.support.design.widget.AppBarLayout>
+
+
+                </FrameLayout>
+
+
+                <!-- The rest of your content view -->
+                <LinearLayout
+                    android:id="@+id/mainLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fadeScrollbars="false"
+                    android:fadingEdge="none"
+                    android:orientation="vertical"
+                    android:scrollbars="none"
+                    android:visibility="visible">
+
+                    <FrameLayout
+                        android:id="@+id/main_frame"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:background="@color/white"
+                        android:visibility="visible">
+
+                        <include layout="@layout/main_scrollview" />
+
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Main layout -->
+
+
+            <!-- The navigation drawer -->
+            <ListView
+                android:id="@+id/drawerListView"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="@color/bacground_color"
+                android:choiceMode="singleChoice"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp" />
+
+        </android.support.v4.widget.DrawerLayout>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
